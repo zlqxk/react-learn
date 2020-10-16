@@ -9,10 +9,18 @@ class One extends React.Component {
             this.props.history.push("/one");
           }}
         >
-          1
+          1、useCallback和useMemo的使用场景
         </p>
-        <p>1</p>
-        <p>1</p>
+        <p
+          onClick={() => {
+            this.props.history.push("/two");
+          }}
+        >
+          2、effect是如何读取到最新的状态值的呢
+        </p>
+        <p>
+          3、连续两次reactDOM.render()会发生什么
+        </p>
       </div>
     );
   }
