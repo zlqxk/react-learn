@@ -18,7 +18,11 @@ class One extends React.Component {
         >
           2、effect是如何读取到最新的状态值的呢
         </p>
-        <p>
+        <p
+          onClick={() => {
+            this.props.history.push("/three");
+          }}
+        >
           3、连续两次reactDOM.render()会发生什么
         </p>
       </div>
