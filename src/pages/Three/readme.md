@@ -27,6 +27,10 @@ class App extends React.PureComponent {
     console.log('didupdate')
   }
 
+  componentWillUnmount() {
+    console.log('willUnmount')
+  }
+
   render() {
     return <div>App</div>;
   }
